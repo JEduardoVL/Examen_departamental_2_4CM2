@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+	<link href="..\../assets/build/styles/ltr-core.css" rel="stylesheet">
+	<link href="..\../assets/build/styles/ltr-vendor.css" rel="stylesheet">
+	<link href="..\../assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<title>SiVeO</title>
+	<style>
+		 #datatable-1 td:nth-child(3) {
+        text-align: center;
+    }
+	 th select, td select {
+        width: 100%;
+    }
+      #input_G{
+        width: 100%;
+      }
+
+	  table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+      }
+      th, td {
+        border: 1px solid white;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: white;
+      }
+    </style>
+    </style>
+</head>
+
+<body class="preload-active aside-active sidebar-active">
+	<!-- BEGIN Preload -->
+	<div class="preload">
+		<div class="preload-dialog">
+			<!-- BEGIN Spinner -->
+			<div class="spinner-border text-primary preload-spinner"></div>
+			<!-- END Spinner -->
+		</div>
+	</div>
+	<!-- END Preload -->
+	<!-- BEGIN Page Holder -->
+	<div class="holder">
+		<!-- END Sidebar -->
+		<!-- BEGIN Page Wrapper -->
+		<div class="wrapper ">
+			<!-- BEGIN Header -->
+			<div class="header">
+				<!-- BEGIN Header Holder -->
+				<div class="header-holder header-holder-desktop">
+					{{>'nav'}}
+				</div>
+				<!-- END Header Holder -->
+			</div>
+			<!-- END Header -->
+
+			<!-- BEGIN Page Content -->
+			<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<!-- BEGIN Portlet -->
+							<h1 >Productos</h1>
+							<div class="portlet">
+									<div class="portlet-header portlet-header-bordered" style="justify-content: space-between">
+									<h3 >Alta de productos</h3>
+									<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal3">Nuevo</button>	
+									
+								</div>
+								
+								<div class="portlet-body">
+
+									
+									<!-- BEGIN Datatable -->
+									<div id="datatable-1_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="dataTables_length" id="datatable-1_length">
+                <label>Mostrar <select name="datatable-1_length" aria-controls="datatable-1" class="form-select form-select-sm">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select> entradas</label>
+            </div>
+        </div>
+            <div class="col-sm-12 col-md-6">
+                <div id="datatable-1_filter" class="dataTables_filter">
+                    <label><input type="search" class="form-control form-control-sm" placeholder="Buscar:" aria-controls="datatable-1"></label>
+                </div>
+            </div>
+        </div>
+        <div class="row dt-row">
+            <div class="col-sm-12">
+                <table id="datatable-1" class="table table-bordered table-striped table-hover dataTable no-footer dtr-inline" aria-describedby="datatable-1_info" style="width: 1046px;">
+												<thead>
+													<tr>
+														<th>Descripción</th>
+														<th>Precio</th>
+														<th>Acciones</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Producto 1</td>
+														<td>$ 1500</td>
+														<td>
+															<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+																<div class="widget18-icon">
+																	<i class="far fa-edit"></i>
+																</div>
+															</button>
+
+															<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
+																<div class="widget18-icon">
+																	<i class="far fa-minus-square"></i>
+																</div>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Producto 2</td>    
+														<td>$170,750</td>
+														<td>
+															<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+																<div class="widget18-icon">
+																	<i class="far fa-edit"></i>
+																</div>
+															</button>
+
+															<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
+																<div class="widget18-icon">
+																	<i class="far fa-minus-square"></i>
+																</div>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Producto 3</td>
+														<td>$ 987</td>
+														<td>
+															<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+																<div class="widget18-icon">
+																	<i class="far fa-edit"></i>
+																</div>
+															</button>
+
+															<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
+																<div class="widget18-icon">
+																	<i class="far fa-minus-square"></i>
+																</div>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Producto 4</td>
+														<td>$ 56414</td>
+														<td>
+															<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+																<div class="widget18-icon">
+																	<i class="far fa-edit"></i>
+																</div>
+															</button>
+
+															<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
+																<div class="widget18-icon">
+																	<i class="far fa-minus-square"></i>
+																</div>
+															</button>
+														</td>
+													</tr>
+											<tr>
+												<td>Producto 6</td>
+												<td>$ 64841</td>
+												<td align="center">
+													<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+														<div class="widget18-icon">
+															<i class="far fa-edit"></i>
+														</div>
+													</button>
+
+													<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
+														<div class="widget18-icon">
+															<i class="far fa-minus-square"></i>
+														</div>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Producto 7</td>
+												<td>$ 9871</td>
+												<td align="center">
+													<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+														<div class="widget18-icon">
+															<i class="far fa-edit"></i>
+														</div>
+													</button>
+
+													<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
+														<div class="widget18-icon">
+															<i class="far fa-minus-square"></i>
+														</div>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Producto 8</td>
+												<td>$ 2315</td>
+												<td align="center">
+													<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+														<div class="widget18-icon">
+															<i class="far fa-edit"></i>
+														</div>
+													</button>
+
+													<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
+														<div class="widget18-icon">
+															<i class="far fa-minus-square"></i>
+														</div>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Producto 9</td>
+												<td>$ 86125</td>
+												<td align="center">
+													<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+														<div class="widget18-icon">
+															<i class="far fa-edit"></i>
+														</div>
+													</button>
+
+													<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
+														<div class="widget18-icon">
+															<i class="far fa-minus-square"></i>
+														</div>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Producto 10</td>
+												<td>$ 351835</td>
+												<td align="center">
+													<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+														<div class="widget18-icon">
+															<i class="far fa-edit"></i>
+														</div>
+													</button>
+
+													<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
+														<div class="widget18-icon">
+															<i class="far fa-minus-square"></i>
+														</div>
+													</button>
+												</td>
+											</tr>
+											
+											
+										</tbody>
+									</table>
+
+<div class="modal fade" id="modal1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary ">
+        <h5 class="modal-title text-white">Editar producto</h5>
+        <button type="button" class="btn btn-label-danger btn-icon" data-bs-dismiss="modal">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p><label for="nombre">Descripción</label></p>
+        <input type="text" id="input_G" name="descripcion" placeholder="Queso">
+        <p></p>
+        <table>
+          <thead>
+            <th>Categoria</th>
+            <th>Proveedor</th>
+          </thead>
+          <tbody>
+            <th> 
+              <select id="opciones" name="opciones">
+                <option value="opcion1">Alimentos y bebidas</option>
+                <option value="opcion2">Seleccione</option>
+                <option value="opcion3">Seleccione</option>
+              </select>
+            </th>
+            <th> 
+              <select id="opciones2" name="opciones2">
+                <option value="opcion1">Grupo Lala</option>
+                <option value="opcion2">Seleccione</option>
+                <option value="opcion3">Seleccione</option>
+              </select>
+            </th>
+          </tbody>
+        </table>
+        <p></p>
+        <p><label for="precio">Precio</label></p>
+        <input type="text" id="precio" name="precio" placeholder="$ 60">
+        <p></p>
+      </div>
+      <div class="modal-footer" style="display: flex; justify-content: space-between; margin: 10px;">
+        <a href="productos" class="btn btn-primary" style="margin-right: auto;">Actualizar</a>
+		<a href="productos" class="btn btn-label-dark" style="margin-left: auto;">Cancelar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<div class="modal fade" id="modal2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				 <div class="modal-header bg-danger ">
+        			<h5 class="modal-title text-white">Eliminar producto</h5>
+      				  <button type="button" class="btn btn-label-danger btn-icon" data-bs-dismiss="modal">
+       				   <i class="fa fa-times"></i>
+      				  </button>
+     			 </div>
+				<div class="modal-body" style="text-align: center; padding: 50px 0;">
+ 					  <h5><p class="mb-0" style="margin: auto; max-width: 80%;">¿Está Usted seguro que desea eliminar el producto “Queso”?</p></h5>
+				</div>
+				<div class="modal-footer">
+				 	<a href="productos" class="btn btn-danger" style="margin-right: auto;">Eliminar</a>
+					<a href="productos" class="btn btn-label-dark" style="margin-left: auto;">Cancelar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="modal fade" id="modal3">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bg-success ">
+    				<h5 class="modal-title text-white">Nuevo producto</h5>
+   				 <button type="button" class="btn btn-label-danger btn-icon" data-bs-dismiss="modal">
+       				 <i class="fa fa-times"></i>
+   				 </button>
+				</div>
+
+				<div class="modal-body">
+					 <p><label for="nombre">Descripción</label></p>
+      					<input type="text" id="input_G" name="descripcion" placeholder="Digite una descripción">
+						<p></p>
+					<table>
+						<thead>
+							<th>Categoria</th>
+							<th>Proveedor</th>
+						</thead>
+						<tbody>
+							<th> <select id="opciones" name="opciones">
+							<option value="opcion1">Seleccione</option>
+							<option value="opcion2">Seleccione</option>
+							<option value="opcion3">Seleccione</option>
+						</select></th>
+												<th> <select id="opciones" name="opciones">
+							<option value="opcion1">Seleccione</option>
+							<option value="opcion2">Seleccione</option>
+							<option value="opcion3">Seleccione</option>
+						</select></th>
+						</tbody>
+					</table>
+						<p></p>
+ 							<p><label for="precio">Precio</label></p>
+      					<input type="text" id="precio" name="precio" placeholder="$0">
+						<p></p>
+				</div>
+				<div class="modal-footer" style="display: flex; justify-content: space-between; margin: 10px;">
+ <a href="productos" class="btn btn-success" style="margin-right: auto;">Guardar</a>
+		<a href="productos" class="btn btn-label-dark" style="margin-left: auto;">Cancelar</a>
+</div>
+			</div>
+		</div>
+	</div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-5">
+                                    <div class="dataTables_info" id="datatable-1_info" role="status" aria-live="polite">Mostrando 1 a 10 de 10 entradas</div>
+                                </div>
+                                <div class="col-sm-12 col-md-7">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="datatable-1_paginate">
+                                        <ul class="pagination">
+                                            <li class="paginate_button page-item previous disabled" id="datatable-1_previous"><a href="#" aria-controls="datatable-1" data-dt-idx="previous" tabindex="0" class="page-link">Anterior</a></li>
+                                            <li class="paginate_button page-item active"><a href="#" aria-controls="datatable-1" data-dt-idx="0" tabindex="0" class="page-link">1</a></li>
+                                            <li class="paginate_button page-item next disabled" id="datatable-1_next"><a href="#" aria-controls="datatable-1" data-dt-idx="next" tabindex="0" class="page-link">Siguiente</a>
+                                            </li></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<script>
+    document.querySelector('#datatable-1_filter input').addEventListener('keyup', function(e) {
+        const term = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('#datatable-1 tbody tr');
+        rows.forEach(row => {
+            const description = row.querySelector('td:first-child').textContent.toLowerCase();
+            const matches = description.includes(term);
+            row.style.display = matches ? '' : 'none';
+        });
+    });
+</script>
+									<!-- END Datatable -->
+
+	
+								</div>
+								
+							</div>
+							<!-- END Portlet -->
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- END Page Content -->
+			<!-- BEGIN Footer -->
+			<div class="footer">
+				{{>'footer'}}
+			</div>
+			<!-- END Footer -->
+		</div>
+
+	</div>
+	<!-- END Page Holder -->
+	<!-- BEGIN Float Button -->
+
+	<!-- END Offcanvas -->
+	<script type="text/javascript" src="..\../assets/build/scripts/mandatory.js"></script>
+	<script type="text/javascript" src="..\../assets/build/scripts/core.js"></script>
+	<script type="text/javascript" src="..\../assets/build/scripts/vendor.js"></script>
+	<script type="text/javascript" src="..\../assets/app/utilities/copyright-year.js"></script>
+	<script type="text/javascript" src="..\../assets/app/utilities/theme-switcher.js"></script>
+	<script type="text/javascript" src="..\../assets/app/utilities/tooltip-popover.js"></script>
+	<script type="text/javascript" src="..\../assets/app/utilities/dropdown-scrollbar.js"></script>
+	<script type="text/javascript" src="..\../assets/app/pages/datatable/advanced/column-rendering.js"></script>
+</body>
+
+</html>
